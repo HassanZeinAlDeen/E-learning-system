@@ -1,0 +1,7 @@
+.content{
+  height: 50%;
+}
+#body{
+  width: 100%;
+  object-fit: cover;
+}

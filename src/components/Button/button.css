@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.log {
+  color: #313A40;
+  background-color: #F23D3D;
+  width: 9rem;
+  height: 2.8rem;
+  border-radius: 2rem;
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  border: none;
+}
+
+.log:hover {
+  color: #F2D022;
+  background-color: #313A40;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.log:active {
+  transform: translateY(0.3rem);
+  transition: 0.2s;
+}
