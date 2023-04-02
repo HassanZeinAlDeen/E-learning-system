@@ -20,6 +20,10 @@ function Register() {
     return emailPattern.test(email);
   };
 
+  const backHome = () => {
+    window.location.href = "http://localhost:3000/"
+  }
+
   const handleSubmit = async (e) => {
     const form = e.target;
     setNameError("");
@@ -59,24 +63,29 @@ function Register() {
   }
 
   return (
-    <div className="inputs">
-      <img id="alogo" src={alogo} alt="logo.png" />
-      <form onSubmit={handleSubmit}>
-        <div className="info">
-          <TextInput in_type="text" u_input="Name" value={name} place="Enter Your Name" onChange={(e) => setName(e.target.value)} required />
-          {nameError && <p className="error">{nameError}</p>}
-          <TextInput in_type="text" u_input="Email" value={email} place="Enter Your Email" onChange={(e) => setEmail(e.target.value)} required />
-          {emailError && <p className="error">{emailError}</p>}
-          <TextInput in_type="password" u_input="Password" value={password} place="Enter Your Password" onChange={(e) => setPassword(e.target.value)} required />
-          {passwordError && <p className="error">{passwordError}</p>}
-          <TextInput in_type="text" u_input="Age" value={age} place="Enter Your Age" onChange={(e) => setAge(e.target.value)} required />
-          {ageError && <p className="error">{ageError}</p>}
-        </div>
-        <div className="jButton">
-          <Button className="new">SignUp</Button>
-        </div>
-      </form>
-    </div>
+    <>
+      <div className="post">
+        <a className="back" onClick={backHome}>Home Page</a>
+      </div>
+      <div className="inputs">
+        <img id="alogo" src={alogo} alt="logo.png" />
+        <form onSubmit={handleSubmit}>
+          <div className="info">
+            <TextInput in_type="text" u_input="Name" value={name} place="Enter Your Name" onChange={(e) => setName(e.target.value)} required />
+            {nameError && <p className="error">{nameError}</p>}
+            <TextInput in_type="text" u_input="Email" value={email} place="Enter Your Email" onChange={(e) => setEmail(e.target.value)} required />
+            {emailError && <p className="error">{emailError}</p>}
+            <TextInput in_type="password" u_input="Password" value={password} place="Enter Your Password" onChange={(e) => setPassword(e.target.value)} required />
+            {passwordError && <p className="error">{passwordError}</p>}
+            <TextInput in_type="text" u_input="Age" value={age} place="Enter Your Age" onChange={(e) => setAge(e.target.value)} required />
+            {ageError && <p className="error">{ageError}</p>}
+          </div>
+          <div className="jButton">
+            <Button className="new">SignUp</Button>
+          </div>
+        </form>
+      </div>
+    </>
   );
 }
 

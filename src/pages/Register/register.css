@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .inputs{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #alogo{
-  width: 20rem;
-  margin-top: 2rem; 
-  margin-bottom: 2rem;
+  width: 18rem;
+  margin-bottom: 1rem;
 }
 
 input{
@@ -24,4 +25,21 @@ input{
   color:#F23D3D;
   text-align: center;
   margin-top: -10px;
+}
+
+.back{
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  color: #313A40;
+  font-weight: bold;
+}
+
+.post{
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+.back:hover{
+  color: #F23D3D;
+  transition: 0.2s;
 }
