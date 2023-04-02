@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+.newBody {
+  font-family: 'Roboto';
+}
 
-#u_logo{
+#u_logo {
   width: 4rem;
   height: auto;
 }
 
-.logo{
+.logo {
   display: flex;
   align-items: center;
 }
 
-.content{
+.newContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,4 +23,67 @@
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   height: 4rem;
-} 
+  font-family: 'Roboto';
+}
+
+#results {
+  display: flex;
+
+}
+
+.leftbar {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #313A40;
+  color: #F2D022;
+  width: 20%;
+  font-size: 1.8rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+  height: 40rem;
+  margin-left: 2rem;
+  font-family: 'Roboto';
+}
+
+.rightbar {
+  background-color: #3d474e;
+  color: #F2D022;
+  width: 60%;
+  height: 40rem;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  font-family: 'Roboto';
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.linkClasses,
+.linkFiles {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.linkClasses:hover {
+  color: #F23D3D;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.linkFiles:hover {
+  color: #F23D3D;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.linkFiles:active {
+  transform: translateY(0.3rem);
+  transition: 0.2s;
+}
+
+.linkClasses:active {
+  transform: translateY(0.3rem);
+  transition: 0.2s;
+}
