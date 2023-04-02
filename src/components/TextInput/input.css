@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  font-family: 'Roboto';
+}
+
+label {
+  color: #313A40;
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+}
+
+.input-margin {
+  width: 17rem;
+  height: 2.4rem;
+  border-radius: 2rem;
+  text-align: center;
+  outline: none;
+  border: 1px solid #313A40;
+}
+
+.input-margin:focus{
+  border-color: #F23D3D;
+}
