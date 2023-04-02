@@ -1,0 +1,22 @@
+
+
+#u_logo{
+  width: 4rem;
+  height: auto;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  height: 4rem;
+} 

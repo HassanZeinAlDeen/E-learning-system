@@ -1,5 +1,4 @@
 import { useState } from "react";
-import TextInput from "../../components/TextInput";
 import alogo from "../../imgs/logo.png";
 import Button from "../../components/Button";
 import "./login.css";
