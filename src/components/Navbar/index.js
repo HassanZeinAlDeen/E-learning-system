@@ -3,6 +3,10 @@ import Button from "../Button";
 import "../Navbar/navbar.css";
 
 const Navbar = () => {
+  const path = () => {
+    window.location.href="http://localhost:3000/login"
+  }
+
   return (<div className="nav">
     <div className="content">
       <div className="logo">
@@ -10,7 +14,7 @@ const Navbar = () => {
       </div>
       <div className="right">
         <a id="about">About Us</a>
-        <Button>Login</Button>
+        <Button onClick={path}>Login</Button>
       </div>
     </div>
   </div>
